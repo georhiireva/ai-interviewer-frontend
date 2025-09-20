@@ -13,7 +13,7 @@ export function useWebSpeechRecognitionService(): SpeechRecognitionService {
     return {
         isAvailable: () => typeof SpeechRecognition !== 'undefined' && browserSupportsSpeechRecognition,
         startListening: (options?: { continuous?: boolean }) =>
-            SpeechRecognition.startListening({ continuous: options?.continuous ?? true }),
+            SpeechRecognition.startListening({ continuous: options?.continuous ?? false }),
         stopListening: () => SpeechRecognition.stopListening(),
         resetTranscript,
         getTranscript: () => transcript,
