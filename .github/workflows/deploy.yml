@@ -2,7 +2,15 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ] # Запускается при пуше в main
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - '**.txt'
+      - '.github/**'
+
+  pull_request:
+    branches: [ "main" ]
+    types: [closed]
 
 # Даем разрешения на запись в репозиторий
 permissions:
@@ -13,6 +21,10 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    if: |
+      (github.event_name == 'push') ||
+      (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
 
     steps:
       # 1. Checkout кода
