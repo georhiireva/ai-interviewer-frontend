@@ -1,5 +1,8 @@
 export interface SpeechRecognitionService {
-    start(onResult: (text: string) => void, onError?: (err: string) => void): void;
-    stop(): void;
-    isActive(): boolean;
+    isAvailable(): boolean;
+    startListening(options?: { continuous?: boolean }): Promise<void>;
+    stopListening(): Promise<void>;
+    resetTranscript(): void;
+    getTranscript(): string;
+    isListening(): boolean;
 }
