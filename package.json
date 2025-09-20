@@ -1,8 +1,9 @@
 {
   "name": "ai-interviewer-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "homepage": "https://georhiireva.github.io/ai-interviewer-frontend",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -14,15 +15,16 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "eslint-plugin-react-dom": "^1.53.1",
-    "eslint-plugin-react-x": "^1.53.1",
     "@eslint/js": "^9.35.0",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",
     "eslint": "^9.35.0",
+    "eslint-plugin-react-dom": "^1.53.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-react-x": "^1.53.1",
+    "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.43.0",
