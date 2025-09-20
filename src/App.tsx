@@ -1,6 +1,6 @@
 import './App.css'
-import VoiceRecorder from "./features/voice-recorder/components/VoiceRecorder.tsx";
-import {SpeechRecognitionProvider} from './features/voice-recorder/services/SpeechRecognitionProvider.tsx';
+import VoiceRecorder from "./features/voice-recorder/";
+import {SpeechRecognitionProvider} from './features/voice-recorder';
 
 function App() {
 
