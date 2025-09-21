@@ -1,12 +1,24 @@
-name: Test Pull Request
-
+name: Code check
 on:
   pull_request:
-    branches: [ "main" ]
-    types: [opened, synchronize, reopened] # Запускается при открытии, обновлении и повторном открытии PR
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      node-version:
+        description: 'Node.js version'
+        required: false
+        default: '20'
+        type: string
+  workflow_call:
+    inputs:
+      node-version:
+        description: 'Node.js version'
+        required: false
+        default: '20'
+        type: string
 
 jobs:
-  test:
+  code-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: ${{ inputs.node-version }}
           cache: 'npm'
           cache-dependency-path: package-lock.json
 

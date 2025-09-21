@@ -7,6 +7,14 @@ on:
       - '**.md'
       - '**.txt'
       - '.github/**'
+  workflow_call:
+    inputs:
+      node-version:
+        description: 'Node.js version'
+        required: false
+        default: '20'
+        type: string
+
 
 #  pull_request_target:
 #    branches: [ "main" ]
@@ -35,7 +43,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: ${{ inputs.node-version }}
           cache: 'npm'
           cache-dependency-path: package-lock.json
 
