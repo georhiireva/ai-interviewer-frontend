@@ -47,7 +47,7 @@ jobs:
     name: Run Code Check
     needs: check-branch
     if: needs.check-branch.outputs.is-main == 'true'
-    uses: code-check.yml
+    uses: code-check.yml@main
     with:
       node-version: ${{ inputs.node-version }}
 
