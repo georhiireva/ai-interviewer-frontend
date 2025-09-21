@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+# Даем разрешения на запись в репозиторий
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print
+        run: |
+          echo "=== GITHUB_REF Analysis ==="
+          echo "Full GITHUB_REF: $GITHUB_REF"
+          echo "Via context: ${{ github.ref }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Event action: ${{ github.event.action }}"
+          echo "PR is merged: ${{ github.event.pull_request.merged }}"
+
+
