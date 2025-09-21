@@ -30,13 +30,13 @@ const VoiceOutput: React.FC = () => {
             }
         };
 
-        let intervalId: number | null = null;
+        let intervalId: number | undefined;
         if (isSpeaking) {
             intervalId = window.setInterval(checkSpeaking, 300);
         }
 
         return () => {
-            if (intervalId) {
+            if (intervalId !== undefined) {
                 window.clearInterval(intervalId);
             }
         };
