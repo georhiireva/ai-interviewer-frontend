@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/georhiireva/ai-interviewer-frontend/compare/v1.1.2...v1.1.3) (2025-09-21)
+
+
+### Performance Improvements
+
+* Добавил возможность ручного запуска деплоя ([d2dc18b](https://github.com/georhiireva/ai-interviewer-frontend/commit/d2dc18ba821b486f70f68efcdca7ddb5dedd8199))
+
 ## [1.1.2](https://github.com/georhiireva/ai-interviewer-frontend/compare/v1.1.1...v1.1.2) (2025-09-21)
 
 
