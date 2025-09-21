@@ -1,3 +1,17 @@
+## [1.1.2](https://github.com/georhiireva/ai-interviewer-frontend/compare/v1.1.1...v1.1.2) (2025-09-21)
+
+
+### Performance Improvements
+
+* Тестирую пайп ([190feac](https://github.com/georhiireva/ai-interviewer-frontend/commit/190feac7f3fd2b937c548960a5d6644e16762c9f))
+* Тестирую пайп ([066d840](https://github.com/georhiireva/ai-interviewer-frontend/commit/066d8405cb6c667b19d14347f0895f37e79bdf00))
+* Тестирую пайп ([b1d8f4f](https://github.com/georhiireva/ai-interviewer-frontend/commit/b1d8f4f2aebc52b36fb5339ed58f55b206aba6d7))
+* Тестирую пайп ([71293e1](https://github.com/georhiireva/ai-interviewer-frontend/commit/71293e1c4e950305d524fc313e3b3da31a1c0893))
+* Тестирую пайп ([49f03bf](https://github.com/georhiireva/ai-interviewer-frontend/commit/49f03bfb5c8328db5d02208eb6121d147e9423d4))
+* Тестирую пайп ([3acc63a](https://github.com/georhiireva/ai-interviewer-frontend/commit/3acc63a7f546f99d5660393d2902fea9c840ab9a))
+* Тестирую пайп ([c970069](https://github.com/georhiireva/ai-interviewer-frontend/commit/c970069b10d75a94595500ada036ebde21ce9b16))
+* Тестирую пайп ([12d51e2](https://github.com/georhiireva/ai-interviewer-frontend/commit/12d51e26825dc590fc92cc043757f607b978b25b))
+
 ## [1.1.1](https://github.com/georhiireva/ai-interviewer-frontend/compare/v1.1.0...v1.1.1) (2025-09-21)
 
 
