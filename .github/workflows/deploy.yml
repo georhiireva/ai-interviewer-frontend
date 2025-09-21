@@ -1,12 +1,6 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ "main" ]
-    paths-ignore:
-      - '**.md'
-      - '**.txt'
-      - '.github/**'
   workflow_call:
     inputs:
       node-version:
@@ -14,11 +8,13 @@ on:
         required: false
         default: '20'
         type: string
-
-
-#  pull_request_target:
-#    branches: [ "main" ]
-#    types: [closed]
+  workflow_dispatch:
+    inputs:
+      node-version:
+        description: 'Node.js version'
+        required: false
+        default: '20'
+        type: string
 
 # Даем разрешения на запись в репозиторий
 permissions:
@@ -65,7 +61,6 @@ jobs:
         with:
           path: './dist'
 
-  # Отдельный job для деплоя
   deploy:
     environment:
       name: github-pages
