@@ -1,6 +1,7 @@
 import './App.css'
 import VoiceRecorder from "./features/voice-recorder/";
 import {SpeechRecognitionProvider} from './features/voice-recorder';
+import VoiceOutput, {VoiceOutputProvider} from "./features/voice-output";
 
 function App() {
 
@@ -11,6 +12,9 @@ function App() {
             <SpeechRecognitionProvider>
                 <VoiceRecorder />
             </SpeechRecognitionProvider>
+            <VoiceOutputProvider>
+                <VoiceOutput />
+            </VoiceOutputProvider>
         </div>
     );
 }
