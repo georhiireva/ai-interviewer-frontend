@@ -1,16 +1,16 @@
 name: Deploy to GitHub Pages
 
 on:
-#  push:
-#    branches: [ "main", "feature/semver" ]
-#    paths-ignore:
-#      - '**.md'
-#      - '**.txt'
-#      - '.github/**'
-
-  pull_request_target:
+  push:
     branches: [ "main" ]
-    types: [closed]
+    paths-ignore:
+      - '**.md'
+      - '**.txt'
+      - '.github/**'
+
+#  pull_request_target:
+#    branches: [ "main" ]
+#    types: [closed]
 
 # Даем разрешения на запись в репозиторий
 permissions:
@@ -22,9 +22,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    if: |
-      (github.event_name == 'push') ||
-      (github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true)
+#    if: |
+#      (github.event_name == 'push') ||
+#      (github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true)
 
     steps:
       # 1. Checkout кода
