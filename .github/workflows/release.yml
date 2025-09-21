@@ -47,7 +47,7 @@ jobs:
     name: Run Code Check
     needs: check-branch
     if: needs.check-branch.outputs.is-main == 'true'
-    uses: ./.github/workflows/code-check.yml@main
+    uses: ./.github/workflows/code-check.yml
     with:
       node-version: ${{ inputs.node-version }}
 
@@ -87,6 +87,6 @@ jobs:
     name: Deploy to GitHub Pages
     needs: release
     if: ${{ inputs.deploy-to-pages == true && inputs.dry-run == false && needs.check-branch.outputs.is-main == 'true' }}
-    uses: ./.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
     with:
       node-version: ${{ inputs.node-version }}
