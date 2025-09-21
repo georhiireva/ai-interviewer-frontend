@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/georhiireva/ai-interviewer-frontend/compare/v1.1.0...v1.1.1) (2025-09-21)
+
+
+### Performance Improvements
+
+* Тестирую пайп ([45c3cce](https://github.com/georhiireva/ai-interviewer-frontend/commit/45c3cceca36f0d4342851e109b101b158ec4ee41))
+* Тестирую пайп ([976a16e](https://github.com/georhiireva/ai-interviewer-frontend/commit/976a16e947674aa8474ed49b08d2cd22f3ff6315))
+
 # [1.1.0](https://github.com/georhiireva/ai-interviewer-frontend/compare/v1.0.2...v1.1.0) (2025-09-21)
 
 
